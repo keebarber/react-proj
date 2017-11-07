@@ -1,28 +1,93 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fill;
+  background-color: rgb(220,220,220);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.GraphBars {
+  width: 100px;
+  box-sizing: inherit;
+  max-height: 100%;
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.GraphBox {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items:  center;
+  margin: 0 10px;
+  height: 200px;
+}
+
+.labels  h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.App_Container {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 400px;
+}
+
+.Graph_Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  border: 2px solid grey;
+  border-radius: 10px;
+  margin-top: 150px;
+  height: 200px;
+  max-height: 200px;
+}
+
+#Vanilla {
+  background-color: #feee4e;
+  border: 2px solid #FF69B4;
+  color: #FF69B4;
+}
+#Chocolate {
+  background-color:   #D2691E;
+  border: 2px solid #feee4e;
+  color: #feee4e;
+}
+#Strawberry {
+  background-color: #FF69B4;
+  border: 2px solid #D2691E;
+  color: #D2691E;
+}
+
+
+
+.Buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin: 0 8px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 108px;
+  background-color: rgb(20,20,20);
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+button:hover {
+  opacity: .7;
+  filter: brightness(.7);
+  box-shadow: 0 0 30px 5px;
 }
